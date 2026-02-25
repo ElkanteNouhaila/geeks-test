@@ -71,3 +71,34 @@ const robots = [
     }
     ];
 
+    const container = document.getElementById("container");
+    const searchInput = document.getElementById("search");
+    
+    function displayRobots(robotArray) {
+      container.innerHTML = "";
+    
+      robotArray.forEach(robot => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+    
+        card.innerHTML = `
+          <img src="https://robohash.org/${robot.id}?size=200x200">
+          <h3>${robot.name}</h3>
+          <p>${robot.email}</p>
+        `;
+    
+        container.appendChild(card);
+      });
+    }
+    
+    displayRobots(robots);
+    
+    searchInput.addEventListener("input", (e) => {
+      const value = e.target.value.toLowerCase();
+    
+      const filtered = robots.filter(robot =>
+        robot.name.toLowerCase().includes(value)
+      );
+    
+      displayRobots(filtered);
+    });

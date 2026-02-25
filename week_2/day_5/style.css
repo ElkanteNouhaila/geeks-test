@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+  }
+  
+  h1 {
+    color: #2b2d42;
+  }
+  
+  #search {
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #00b4d8;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+  }
