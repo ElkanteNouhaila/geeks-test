@@ -1,4 +1,4 @@
-const apiKey = "YOUR_API_KEY";
+const apiKey = "6126a4030b146d9aab3ed265";
 const fromSelect = document.getElementById("from");
 const toSelect = document.getElementById("to");
 const amountInput = document.getElementById("amount");
