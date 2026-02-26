@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars Random Character</title>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #character-card {
+      margin-top: 30px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      display: inline-block;
+      min-width: 300px;
+    }
+
+    .loading {
+      font-size: 20px;
+    }
+
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Star Wars Character</h1>
+  <button id="btn">Get Random Character</button>
+
+  <div id="character-card"></div>
+
+  <script src="star-wars.js"></script>
+</body>
+</html>
