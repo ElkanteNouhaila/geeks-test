@@ -1,6 +1,6 @@
 // ==== Exercice1
 
-const apiKey = "YOUR_API_KEY"; 
+const apiKey = "my api key"; 
 
 const form = document.createElement("form");
 const input = document.createElement("input");
