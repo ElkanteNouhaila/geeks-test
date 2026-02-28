@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Page</title>
+</head>
+<body>
+  <form id="myForm">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="lastname" placeholder="Last Name" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('myForm');
+    form.onsubmit = function(e) {
+      e.preventDefault(); 
+      const name = form.name.value;
+      const lastname = form.lastname.value;
+      window.location.href = `display.html?name=${encodeURIComponent(name)}&lastname=${encodeURIComponent(lastname)}`;
+    };
+  </script>
+</body>
+</html>

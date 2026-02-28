@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Data</title>
+</head>
+<body>
+  <section id="displaySection"></section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const lastname = params.get('lastname');
+
+    const section = document.getElementById('displaySection');
+    section.innerHTML = `<p>Name: ${name}</p><p>Last Name: ${lastname}</p>`;
+  </script>
+</body>
+</html>
